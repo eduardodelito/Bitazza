@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_graph"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_login">
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.enaz.bitazza.ui.login.LoginFragment"
+        android:label="@string/title_login"
+        tools:layout="@layout/login_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_market"
+        android:name="com.enaz.bitazza.ui.market.MarketFragment"
+        android:label="@string/title_market"
+        tools:layout="@layout/market_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_wallet"
+        android:name="com.enaz.bitazza.ui.wallet.WalletFragment"
+        android:label="@string/title_wallet"
+        tools:layout="@layout/wallet_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.enaz.bitazza.ui.news.NewsFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/news_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_activity"
+        android:name="com.enaz.bitazza.ui.activity.ActivityFragment"
+        android:label="@string/title_activity"
+        tools:layout="@layout/activity_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.enaz.bitazza.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/settings_fragment" >
+    </fragment>
+
+</navigation>
